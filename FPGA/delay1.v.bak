@@ -1,0 +1,22 @@
+module dalay1 (
+	 clk,
+    data_in,
+	 data_out
+);
+
+output reg [13:0] data_out;
+input wire [7:0] data_in1;
+input wire [13:0] data_in2;
+input wire sel;
+
+always @(*) begin
+	if(!sel) begin
+		data_out[13:6]=data_in1[7:0];
+		data_out[5:0]=6'd 0;
+	end
+	else begin
+		data_out[13:0]=data_in2[13:0];
+	end
+end
+
+endmodule

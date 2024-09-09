@@ -1,0 +1,171 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+# Date created = 10:23:30  July 29, 2024
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		am_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE10F17C8
+set_global_assignment -name TOP_LEVEL_ENTITY am
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:23:30  JULY 29, 2024"
+set_global_assignment -name LAST_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_E1 -to CLK
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name ENABLE_SIGNALTAP ON
+set_global_assignment -name USE_SIGNALTAP_FILE output_files/stp1.stp
+set_global_assignment -name VERILOG_FILE mylogic.v
+set_global_assignment -name VERILOG_FILE dac.v
+set_global_assignment -name BDF_FILE am.bdf
+set_global_assignment -name QIP_FILE mypll.qip
+set_global_assignment -name CDF_FILE output_files/Chain1.cdf
+set_global_assignment -name VERILOG_FILE dds.v
+set_global_assignment -name QIP_FILE romsin.qip
+set_global_assignment -name CDF_FILE output_files/Chain3.cdf
+set_global_assignment -name CDF_FILE output_files/Chain9.cdf
+set_global_assignment -name VERILOG_FILE output_files/dac.v
+set_global_assignment -name QIP_FILE lpm_constant0.qip
+set_global_assignment -name QIP_FILE lpm_constant1.qip
+set_global_assignment -name QIP_FILE lpm_constant2.qip
+set_global_assignment -name SIGNALTAP_FILE output_files/stp1.stp
+set_global_assignment -name QIP_FILE output_files/lpm_constant0.qip
+set_global_assignment -name QIP_FILE output_files/lpm_constant1.qip
+set_global_assignment -name QIP_FILE mymult.qip
+set_global_assignment -name QIP_FILE output_files/lpm_constant4.qip
+set_global_assignment -name QIP_FILE myadd.qip
+set_global_assignment -name QIP_FILE mymult2.qip
+set_global_assignment -name QIP_FILE output_files/lpm_constant5.qip
+set_global_assignment -name VERILOG_FILE mydelay.v
+set_location_assignment PIN_A13 -to DAC_DATA1[13]
+set_location_assignment PIN_B13 -to DAC_DATA1[12]
+set_location_assignment PIN_A14 -to DAC_DATA1[11]
+set_location_assignment PIN_B14 -to DAC_DATA1[10]
+set_location_assignment PIN_A15 -to DAC_DATA1[9]
+set_location_assignment PIN_B16 -to DAC_DATA1[8]
+set_location_assignment PIN_C15 -to DAC_DATA1[7]
+set_location_assignment PIN_C16 -to DAC_DATA1[6]
+set_location_assignment PIN_D15 -to DAC_DATA1[5]
+set_location_assignment PIN_D16 -to DAC_DATA1[4]
+set_location_assignment PIN_F15 -to DAC_DATA1[3]
+set_location_assignment PIN_F16 -to DAC_DATA1[2]
+set_location_assignment PIN_G15 -to DAC_DATA1[1]
+set_location_assignment PIN_G16 -to DAC_DATA1[0]
+set_location_assignment PIN_E11 -to DAC_DATA2[13]
+set_location_assignment PIN_D12 -to DAC_DATA2[12]
+set_location_assignment PIN_C14 -to DAC_DATA2[11]
+set_location_assignment PIN_F10 -to DAC_DATA2[10]
+set_location_assignment PIN_D14 -to DAC_DATA2[9]
+set_location_assignment PIN_F11 -to DAC_DATA2[8]
+set_location_assignment PIN_F13 -to DAC_DATA2[7]
+set_location_assignment PIN_F14 -to DAC_DATA2[6]
+set_location_assignment PIN_G11 -to DAC_DATA2[5]
+set_location_assignment PIN_K9 -to DAC_DATA2[4]
+set_location_assignment PIN_K10 -to DAC_DATA2[3]
+set_location_assignment PIN_J11 -to DAC_DATA2[2]
+set_location_assignment PIN_J12 -to DAC_DATA2[1]
+set_location_assignment PIN_J13 -to DAC_DATA2[0]
+set_location_assignment PIN_J15 -to DACA_CLK
+set_location_assignment PIN_J16 -to DACA_WRT
+set_location_assignment PIN_K16 -to DACB_CLK
+set_location_assignment PIN_K15 -to DACB_WRT
+set_global_assignment -name ENABLE_CONFIGURATION_PINS OFF
+set_global_assignment -name ENABLE_NCE_PIN OFF
+set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name VERILOG_FILE select.v
+set_location_assignment PIN_P11 -to select
+set_global_assignment -name QIP_FILE lpm_constant9.qip
+set_location_assignment PIN_K11 -to en
+set_location_assignment PIN_K12 -to sel[2]
+set_location_assignment PIN_L14 -to sel[1]
+set_location_assignment PIN_N14 -to sel[0]
+set_location_assignment PIN_P14 -to data[3]
+set_location_assignment PIN_N12 -to data[2]
+set_location_assignment PIN_M11 -to data[1]
+set_location_assignment PIN_L9 -to data[0]
+set_global_assignment -name VERILOG_FILE delay1.v
+set_global_assignment -name QIP_FILE lpm_constant12.qip
+set_location_assignment PIN_N13 -to data[7]
+set_location_assignment PIN_L11 -to data[6]
+set_location_assignment PIN_L10 -to data[5]
+set_location_assignment PIN_N11 -to data[4]
+set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_DATA1[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_DATA1[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_DATA1[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_DATA1[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_DATA1[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_DATA1[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_DATA1[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_DATA1[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_DATA1[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_DATA1[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_DATA1[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_DATA1[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_DATA1[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_DATA1[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_DATA2[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_DATA2[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_DATA2[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_DATA2[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_DATA2[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_DATA2[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_DATA2[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_DATA2[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_DATA2[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_DATA2[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_DATA2[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_DATA2[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_DATA2[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_DATA2[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DACA_CLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DACA_WRT
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DACB_CLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DACB_WRT
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

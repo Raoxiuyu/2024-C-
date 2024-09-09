@@ -1,0 +1,46 @@
+module dds (
+    clk,
+    rstn,
+    dac_clk,
+    sin_out
+);
+
+input  wire clk,rstn;
+output wire dac_clk;
+output wire [11:0] sin_out;
+wire [31:0] Fword;
+wire [7:0] Pword;
+
+assign Pword=8'b 0;
+assign Fword=32'H 01000000;
+
+wire [7:0] wave_data;
+reg [11:0] wave_data_r;
+reg [31:0] Fcnt;
+wire [7:0] rom_addr;
+
+assign sin_out=wave_data_r;
+
+always @(posedge clk or negedge rstn) begin
+    if (!rstn) begin
+        Fcnt<=32'b 0;
+    end
+    else
+        Fcnt<=Fcnt+Fword;
+end
+
+assign rom_addr=Fcnt[31:24]+Pword;
+assign dac_clk=clk;
+
+romsin mysin(
+    .address(rom_addr),
+    .clock(clk),
+    .q(wave_data)
+);
+
+always @(posedge clk) begin
+    wave_data_r[10:4]<=wave_data[6:0];
+    wave_data_r[11]<=~wave_data[7];
+end
+
+endmodule //dds

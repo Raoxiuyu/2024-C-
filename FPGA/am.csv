@@ -1,0 +1,73 @@
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+# Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+# File: C:\Users\jiatianbao\Desktop\2024\fpga\AM\am.csv
+# Generated on: Mon Jul 29 19:25:00 2024
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus II software.
+
+To,Direction,Location,I/O Bank,VREF Group,Fitter Location,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair
+altera_reserved_tck,Input,,,,PIN_H3,,,,,
+altera_reserved_tdi,Input,,,,PIN_H4,,,,,
+altera_reserved_tdo,Output,,,,PIN_J4,,,,,
+altera_reserved_tms,Input,,,,PIN_J5,,,,,
+CLK,Input,PIN_E1,1,B1_N0,PIN_E1,,,,,
+DAC_DATA1[13],Output,PIN_A13,7,B7_N0,PIN_A13,3.3-V LVTTL,,,,
+DAC_DATA1[12],Output,PIN_B13,7,B7_N0,PIN_B13,3.3-V LVTTL,,,,
+DAC_DATA1[11],Output,PIN_A14,7,B7_N0,PIN_A14,3.3-V LVTTL,,,,
+DAC_DATA1[10],Output,PIN_B14,7,B7_N0,PIN_B14,3.3-V LVTTL,,,,
+DAC_DATA1[9],Output,PIN_A15,7,B7_N0,PIN_A15,3.3-V LVTTL,,,,
+DAC_DATA1[8],Output,PIN_B16,6,B6_N0,PIN_B16,3.3-V LVTTL,,,,
+DAC_DATA1[7],Output,PIN_C15,6,B6_N0,PIN_C15,3.3-V LVTTL,,,,
+DAC_DATA1[6],Output,PIN_C16,6,B6_N0,PIN_C16,3.3-V LVTTL,,,,
+DAC_DATA1[5],Output,PIN_D15,6,B6_N0,PIN_D15,3.3-V LVTTL,,,,
+DAC_DATA1[4],Output,PIN_D16,6,B6_N0,PIN_D16,3.3-V LVTTL,,,,
+DAC_DATA1[3],Output,PIN_F15,6,B6_N0,PIN_F15,3.3-V LVTTL,,,,
+DAC_DATA1[2],Output,PIN_F16,6,B6_N0,PIN_F16,3.3-V LVTTL,,,,
+DAC_DATA1[1],Output,PIN_G15,6,B6_N0,PIN_G15,3.3-V LVTTL,,,,
+DAC_DATA1[0],Output,PIN_G16,6,B6_N0,PIN_G16,3.3-V LVTTL,,,,
+DAC_DATA2[13],Output,PIN_E11,7,B7_N0,PIN_E11,3.3-V LVTTL,,,,
+DAC_DATA2[12],Output,PIN_D12,7,B7_N0,PIN_D12,3.3-V LVTTL,,,,
+DAC_DATA2[11],Output,PIN_C14,7,B7_N0,PIN_C14,3.3-V LVTTL,,,,
+DAC_DATA2[10],Output,PIN_F10,7,B7_N0,PIN_F10,3.3-V LVTTL,,,,
+DAC_DATA2[9],Output,PIN_D14,7,B7_N0,PIN_D14,3.3-V LVTTL,,,,
+DAC_DATA2[8],Output,PIN_F11,7,B7_N0,PIN_F11,3.3-V LVTTL,,,,
+DAC_DATA2[7],Output,PIN_F13,6,B6_N0,PIN_F13,3.3-V LVTTL,,,,
+DAC_DATA2[6],Output,PIN_F14,6,B6_N0,PIN_F14,3.3-V LVTTL,,,,
+DAC_DATA2[5],Output,PIN_G11,6,B6_N0,PIN_G11,3.3-V LVTTL,,,,
+DAC_DATA2[4],Output,PIN_K9,4,B4_N0,PIN_K9,3.3-V LVTTL,,,,
+DAC_DATA2[3],Output,PIN_K10,4,B4_N0,PIN_K10,3.3-V LVTTL,,,,
+DAC_DATA2[2],Output,PIN_J11,5,B5_N0,PIN_J11,3.3-V LVTTL,,,,
+DAC_DATA2[1],Output,PIN_J12,5,B5_N0,PIN_J12,3.3-V LVTTL,,,,
+DAC_DATA2[0],Output,PIN_J13,5,B5_N0,PIN_J13,3.3-V LVTTL,,,,
+DACA_CLK,Output,PIN_J15,5,B5_N0,PIN_J15,3.3-V LVTTL,,,,
+DACA_WRT,Output,PIN_J16,5,B5_N0,PIN_J16,3.3-V LVTTL,,,,
+DACB_CLK,Output,PIN_K16,5,B5_N0,PIN_K16,3.3-V LVTTL,,,,
+DACB_WRT,Output,PIN_K15,5,B5_N0,PIN_K15,3.3-V LVTTL,,,,
+data[3],Input,,,,PIN_L15,,,,,
+data[2],Input,,,,PIN_R10,,,,,
+data[1],Input,,,,PIN_A10,,,,,
+data[0],Input,,,,PIN_C11,,,,,
+en,Input,,,,PIN_T12,,,,,
+sel[2],Input,,,,PIN_B10,,,,,
+sel[1],Input,,,,PIN_A11,,,,,
+sel[0],Input,,,,PIN_F9,,,,,
+Key,Unknown,PIN_M2,2,B2_N0,,3.3-V LVTTL,,,,
+led[3],Unknown,PIN_A4,8,B8_N0,,3.3-V LVTTL,,,,
+led[2],Unknown,PIN_B4,8,B8_N0,,3.3-V LVTTL,,,,
+led[1],Unknown,PIN_A3,8,B8_N0,,3.3-V LVTTL,,,,
+led[0],Unknown,PIN_B3,8,B8_N0,,3.3-V LVTTL,,,,
+Rst_n,Unknown,,,,,3.3-V LVTTL,,,,
+f16,Unknown,,,,,,,,,

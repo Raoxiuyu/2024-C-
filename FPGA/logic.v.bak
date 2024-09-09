@@ -1,0 +1,123 @@
+module logic(
+	input en,
+	input [2:0] sel,
+	input [3:0] data,
+	output reg [7:0] coe_a,
+	output reg [9:0] delay,
+	output reg [31:0] freqWord_1,
+	output reg [31:0] phaseWord_1
+);
+	always @(*)
+		if(en==1'b0)
+			case(sel)
+				3'b001: begin	// Ma 30%~90% 10% step
+					case (data)
+						4'b0000: begin
+							coe_a = 8'd3;
+						end
+						4'b0010: begin
+							coe_a = 8'd4;
+						end
+						4'b0010: begin
+							coe_a = 8'd5;
+						end
+						4'b0011: begin
+							coe_a = 8'd6;
+						end
+						4'b0100: begin
+							coe_a = 8'd7;
+						end
+						4'b0101: begin
+							coe_a = 8'd8;
+						end
+						4'b0110: begin
+							coe_a = 8'd9;
+						end
+					endcase
+				end
+				3'b010: begin	// Sm Delay 50~200ns 30ns step
+					case (data)
+						4'b0000: begin	// 50ns
+							delay = 10'd50;
+						end
+						4'b0010: begin	// 80ns
+							delay = 10'd80;
+						end
+						4'b0010: begin	// 110ns
+							delay = 10'd110;
+						end
+						4'b0011: begin	// 140ns
+							delay = 10'd140;
+						end
+						4'b0100: begin	// 170ns
+							delay = 10'd170;
+						end
+						4'b0101: begin	// 200ns
+							delay = 10'd200;
+						end
+					endcase
+				end
+				3'b100: begin	// fc 30~40M 1MHz step
+					case (data)
+						4'b0000: begin
+							freqWord_1 = 32'd1288490189;
+						end
+						4'b0010: begin
+							freqWord_1 = 32'd1331439862;
+						end
+						4'b0010: begin
+							freqWord_1 = 32'd1374389535;
+						end
+						4'b0011: begin
+							freqWord_1 = 32'd1417339208;
+						end
+						4'b0100: begin
+							freqWord_1 = 32'd1460288881;
+						end
+						4'b0101: begin
+							freqWord_1 = 32'd1503238554;
+						end
+						4'b0110: begin
+							freqWord_1 = 32'd1546188227;
+						end
+						4'b0111: begin
+							freqWord_1 = 32'd1589137900;
+						end
+						4'b1000: begin
+							freqWord_1 = 32'd1632087572;
+						end
+						4'b1001: begin
+							freqWord_1 = 32'd1675037245;
+						end
+						4'b1010: begin
+							freqWord_1 = 32'd1717986918;
+						end
+					endcase
+				end
+				3'b101: begin	// Sm Phase 0~180deg 30deg step
+					case (data)
+						4'b0000: begin
+							phaseWord_1 = 32'd0 >> 24;
+						end
+						4'b0010: begin
+							phaseWord_1 = 32'd21 >> 24;
+						end
+						4'b0010: begin
+							phaseWord_1 = 32'd43 >> 24;
+						end
+						4'b0011: begin
+							phaseWord_1 = 32'd64 >> 24;
+						end
+						4'b0100: begin
+							phaseWord_1 = 32'd85 >> 24;
+						end
+						4'b0101: begin
+							phaseWord_1 = 32'd107 >> 24;
+						end
+						4'b0110: begin
+							phaseWord_1 = 32'd128 >> 24;
+						end
+					endcase
+				end
+			endcase
+endmodule

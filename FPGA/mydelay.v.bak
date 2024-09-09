@@ -1,0 +1,20 @@
+module dac (
+    clk,
+    dac_clk,
+    da_out,
+	 data_in,
+);
+
+input  wire clk;
+output wire dac_clk;
+output reg [11:0] da_out;
+input wire [11:0] data_in;
+
+assign dac_clk=clk;
+
+always @(posedge clk) begin
+	da_out[10:0]<=data_in[10:0];
+	da_out[11]<=~data_in[11];
+end
+
+endmodule
